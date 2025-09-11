@@ -1,8 +1,66 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Footer = () => {
+
+  const footerElement=[
+    {
+      name:"Home",
+      link:"/"
+    },
+    {
+      name:"Events",
+      link:"/"
+    },
+     {
+      name:"Contact",
+      link:"/"
+    },
+     {
+      name:"About",
+      link:"/"
+    },
+  ]
   return (
-    <div>Footer</div>
+    <div className=' h-[40vh]'>
+
+      <div className='mt-10 bg-amber-500 w-full h-10'>
+
+      </div>
+
+      <div className='w-full flex justify-center items-center my-12'>
+      <div className='flex gap-8'>
+        {footerElement.map((element,index)=>(
+          <Link key={index} href={element.link} className='hover:text-[#962528] font-semibold'>
+          <p>{element.name}</p>
+          </Link>
+        ))}
+      </div>
+      </div>
+
+      <div className='w-full flex justify-around pt-10 font-semibold'>
+
+        <div className='flex flex-col gap-1'>
+          <div className='text-xl'>Contact Us</div>
+
+          <div className='pt-4'>
+          <p>+91 99535XXXX</p>
+          <p>abcd@gmail.com</p>
+          </div>
+        </div>
+
+         <div className='flex flex-col gap-1'>
+          <div className='text-xl'>Working Hours</div>
+
+          <div className='pt-4'>
+          <p>8:00AM - 8:00PM</p>
+          
+          </div>
+        </div>
+
+      </div>
+
+    </div>
   )
 }
 
