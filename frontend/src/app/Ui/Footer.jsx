@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { Youtube,Mail,Instagram } from 'lucide-react'
 
 const Footer = () => {
 
@@ -24,7 +25,7 @@ const Footer = () => {
   return (
     <div className=' h-[40vh]'>
 
-      <div className='mt-10 bg-amber-500 w-full h-10'>
+      <div className='mt-10 w-full h-10'>
 
       </div>
 
@@ -59,6 +60,17 @@ const Footer = () => {
         </div>
 
       </div>
+
+      <div className='w-full flex justify-center items-center gap-6 pt-14 text-xl'>
+
+        <Youtube />
+        <Instagram />
+        <Mail />
+      </div>
+
+      <p className='text-center py-10 text-sm'>
+         © 2025 Gloriouz Events. All rights reserved
+      </p>
 
     </div>
   )
