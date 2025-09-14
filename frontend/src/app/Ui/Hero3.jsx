@@ -36,7 +36,7 @@ const Hero3=()=>{
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-          V3 Events Services
+          GLORIOUS WINGZ SERVICES
         </h2>
         <div className="flex justify-center mt-2 mb-10">
           <Heart className="w-6 h-6 text-red-500" />
@@ -54,9 +54,7 @@ const Hero3=()=>{
                 {service.title}
               </h3>
               <p className="text-sm text-gray-600">{service.desc}</p>
-              <button className="mt-4 text-sm text-red-400 hover:text-red-600 font-medium">
-                Read More »
-              </button>
+             
             </div>
           ))}
         </div>

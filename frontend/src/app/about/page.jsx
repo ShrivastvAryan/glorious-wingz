@@ -1,12 +1,13 @@
 import React from "react";
 import Marquee from "../Ui/Marquee";
+import { Mail,Phone,MapPin } from "lucide-react";
 
 const Contact= () => {
   return (
 
     <>
     <Marquee/>
-    <div className="min-h-screen px-6 pt-20">
+    <div className=" px-6 pt-20">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left: About Us */}
         <div>
@@ -33,11 +34,20 @@ const Contact= () => {
         </div>
 
         {/* Right: Contact / Gallery */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 text-white">
           
-          <div className="bg-[#962528] w-full h-20 rounded-2xl"></div>
-           <div className="bg-[#962528] w-full h-20 rounded-2xl"></div>
-          <div className="bg-[#962528] w-full h-20 rounded-2xl"></div>
+          <div className="bg-[#962528] w-full rounded-2xl flex text-2xl gap-6 p-2">
+            <Mail size={30}/>
+            <p>abcd@gmail.com</p>
+          </div>
+           <div className="bg-[#962528] w-full  rounded-2xl flex text-2xl gap-6 p-2">
+            <Phone size={30} />
+             <p>+91 9953XXXX</p>
+           </div>
+          <div className="bg-[#962528] w-full  rounded-2xl flex text-2xl gap-6 p-2">
+            <MapPin size={30} />
+            <p>XYZ</p>
+          </div>
           
         </div>
 

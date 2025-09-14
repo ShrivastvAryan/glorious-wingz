@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Youtube,Mail,Instagram } from 'lucide-react'
+import Image from 'next/image'
 
 const Footer = () => {
 
@@ -23,10 +24,11 @@ const Footer = () => {
     },
   ]
   return (
-    <div className=' h-[40vh]'>
+    <div className='mt-20'>
 
-      <div className='mt-10 w-full h-10'>
-
+      {/*<div className='w-[70vw] mx-auto h-[2px] bg-[#962528] mt-24'></div>*/}
+      <div className='mt-5 mx-auto relative w-full flex items-center justify-center'>
+        <Image className='object-cover' src='/logo.jpg' width={100} height={100}/>
       </div>
 
       <div className='w-full flex justify-center items-center my-12'>
