@@ -11,7 +11,7 @@ const Contact= () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left: About Us */}
         <div>
-          <h1 className="text-3xl font-bold mb-4">About Us</h1>
+          <h1 className="text-3xl font-bold mb-4 text-[#962528]">About Us</h1>
           <p className="text-gray-700 mb-4 leading-relaxed">
             We are a Delhi & Mumbai based event management & wedding planning
             company dedicated to providing customers with a wide range of event
@@ -36,15 +36,15 @@ const Contact= () => {
         {/* Right: Contact / Gallery */}
         <div className="flex flex-col gap-6 text-white">
           
-          <div className="bg-[#962528] w-full rounded-2xl flex text-2xl gap-6 p-2">
+          <div className="bg-[#962528] w-full rounded-2xl flex text-2xl gap-6 p-2 pl-3">
             <Mail size={30}/>
             <p>abcd@gmail.com</p>
           </div>
-           <div className="bg-[#962528] w-full  rounded-2xl flex text-2xl gap-6 p-2">
+           <div className="bg-[#962528] w-full  rounded-2xl flex text-2xl gap-6 p-2 pl-3">
             <Phone size={30} />
              <p>+91 9953XXXX</p>
            </div>
-          <div className="bg-[#962528] w-full  rounded-2xl flex text-2xl gap-6 p-2">
+          <div className="bg-[#962528] w-full  rounded-2xl flex text-2xl gap-6 p-2 pl-3">
             <MapPin size={30} />
             <p>XYZ</p>
           </div>

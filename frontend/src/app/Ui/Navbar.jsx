@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
 
@@ -10,15 +11,11 @@ const Navbar = () => {
     },
     {
        element:"Events",
-        link:"/"
-    },
-    {
-      element:"Contact",
-        link:"/"
+        link:"/events"
     },
     {
       element:"About",
-        link:"/"
+        link:"/about"
     }
 ] 
  return (
@@ -34,11 +31,7 @@ const Navbar = () => {
             ))}
         </div>
 
-        {/* Center Logo */}
-        <div className="flex items-center space-x-2 font-semibold text-gray-800">
-          <div className="w-3 h-3 bg-red-600 rotate-45"></div>
-          <span>Descon</span>
-        </div>
+        
 
         {/* Right Button */}
         <div>

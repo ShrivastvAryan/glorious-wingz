@@ -1,30 +1,26 @@
 // pages/index.js
-import { Heart, Music, MapPin, PartyPopper } from "lucide-react";
+import { Heart, Music, MapPin, PartyPopper,Hotel } from "lucide-react";
 
 const services = [
   {
-    icon: <Music className="w-10 h-10 text-red-500" />,
+    icon: <Music className="w-10 h-10 text-white" />,
     title: "Entertainment",
     desc: "An event is one of the strongest and most impactful methods of communication. Including entertainment elevates the experience remarkably.",
   },
   {
-    icon: <PartyPopper className="w-10 h-10 text-yellow-500" />,
+    icon: <PartyPopper className="w-10 h-10 text-white" />,
     title: "Events",
     desc: "We understand how every event matters to you—whether it's a personal occasion or a professional gathering.",
   },
   {
     icon: (
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/2972/2972172.png"
-        alt="Wedding Venue"
-        className="w-10 h-10"
-      />
+      <Hotel className="w-10 h-10 text-white" />
     ),
-    title: "Wedding Venues",
+    title: "Venues",
     desc: "A wedding is a cherished, once-in-a-lifetime celebration, and everyone dreams of a magnificent venue for such a special day.",
   },
   {
-    icon: <MapPin className="w-10 h-10 text-red-500" />,
+    icon: <MapPin className="w-10 h-10 text-white" />,
     title: "Hospitality",
     desc: "Coordinating travel and hotel bookings can be stressful during events. We handle it all so you can stay relaxed and focused.",
   },
@@ -32,7 +28,7 @@ const services = [
 
 const Hero3=()=>{
   return (
-    <section className=" py-16">
+    <section className=" bg-[#fdf8f5] py-16">
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -47,13 +43,13 @@ const Hero3=()=>{
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="bg-gray-100 rounded-2xl shadow-md p-6 hover:shadow-xl transition"
+              className="bg-[#962528] rounded-2xl shadow-md p-6 hover:shadow-xl transition"
             >
               <div className="flex justify-center mb-4">{service.icon}</div>
-              <h3 className="text-lg font-semibold mb-2 text-gray-800">
+              <h3 className="text-lg font-semibold mb-2 text-white">
                 {service.title}
               </h3>
-              <p className="text-sm text-gray-600">{service.desc}</p>
+              <p className="text-sm text-white">{service.desc}</p>
              
             </div>
           ))}

@@ -24,7 +24,7 @@ const Footer = () => {
     },
   ]
   return (
-    <div className='mt-20'>
+    <div className=' bg-[#fdf8f5] mt-20'>
 
       {/*<div className='w-[70vw] mx-auto h-[2px] bg-[#962528] mt-24'></div>*/}
       <div className='mt-5 mx-auto relative w-full flex items-center justify-center'>

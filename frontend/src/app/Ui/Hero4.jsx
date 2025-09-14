@@ -18,7 +18,7 @@ const testimonials = [
 
 const Testimonials=()=> {
   return (
-    <section className=" py-16">
+    <section className=" bg-[#fdf8f5] py-16">
       <div className="max-w-6xl mx-auto px-6 text-center">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -33,7 +33,7 @@ const Testimonials=()=> {
           {testimonials.map((t, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row text-left"
+              className="rounded-2xl shadow-md overflow-hidden flex flex-col md:flex-row text-left"
             >
               {/* Image */}
               <img

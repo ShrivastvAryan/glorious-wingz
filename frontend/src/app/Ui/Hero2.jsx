@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <section className="bg-[#fdf8f5] py-16">
+    <section className=" bg-[#fdf8f5] py-16">
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Section Title */}
         <p className="text-xs font-semibold text-red-600 tracking-widest uppercase">
