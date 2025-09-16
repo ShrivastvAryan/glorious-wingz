@@ -15,10 +15,6 @@ const Footer = () => {
       link:"/"
     },
      {
-      name:"Contact",
-      link:"/"
-    },
-     {
       name:"About",
       link:"/"
     },

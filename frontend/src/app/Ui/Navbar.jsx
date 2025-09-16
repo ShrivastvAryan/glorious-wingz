@@ -31,7 +31,9 @@ const Navbar = () => {
             ))}
         </div>
 
-        
+        <div className="relative">
+          <Image src='/logo.jpg' className="object-cover" height={100} width={100}/>
+        </div>
 
         {/* Right Button */}
         <div>
