@@ -21,7 +21,7 @@ const Services = () => {
           {/* Service 1 */}
           <div className="relative group overflow-hidden rounded-lg shadow-md">
             <Image
-              src=""
+              src="/venue-host.jpg"
               alt="Venue Dressing"
               width={400}
               height={500}
@@ -30,34 +30,49 @@ const Services = () => {
             <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
               <div className="bg-white/90 px-6 py-4 rounded-md shadow-md text-center">
                 <h3 className="text-lg font-semibold text-gray-900">
-                  Venue Dressing
+                  Venue Hosting
                 </h3>
-                <p className="text-sm text-gray-600 mt-1">Learn more</p>
+               
               </div>
             </div>
           </div>
 
-          {/* Service 2 */}
-          <div className="overflow-hidden rounded-lg shadow-md">
+          <div className="relative group overflow-hidden rounded-lg shadow-md">
             <Image
-              src=""
-              alt="Wedding Setup"
+              src="/event.jpg"
+              alt="Event"
               width={400}
               height={500}
-              className="object-cover w-full h-[420px] transition-transform duration-500 hover:scale-110"
+              className="object-cover w-full h-[420px] transition-transform duration-500 group-hover:scale-110"
             />
+            <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div className="bg-white/90 px-6 py-4 rounded-md shadow-md text-center">
+                <h3 className="text-lg font-semibold text-gray-900">
+                  Event Hosting
+                </h3>
+               
+              </div>
+            </div>
           </div>
 
-          {/* Service 3 */}
-          <div className="overflow-hidden rounded-lg shadow-md">
+         <div className="relative group overflow-hidden rounded-lg shadow-md">
             <Image
-              src=""
-              alt="Rings & Jewelry"
+              src="/img5.jpg"
+              alt="Entertainment"
               width={400}
               height={500}
-              className="object-cover w-full h-[420px] transition-transform duration-500 hover:scale-110"
+              className="object-cover w-full h-[420px] transition-transform duration-500 group-hover:scale-110"
             />
+            <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div className="bg-white/90 px-6 py-4 rounded-md shadow-md text-center">
+                <h3 className="text-lg font-semibold text-gray-900">
+                  Entertainment
+                </h3>
+               
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
     </section>

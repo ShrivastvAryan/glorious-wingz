@@ -1,12 +1,12 @@
 import React from "react";
-import Marquee from "../Ui/Marquee";
+import Banner from "../Ui/Banner";
 import { Mail,Phone,MapPin } from "lucide-react";
 
 const Contact= () => {
   return (
 
     <>
-    <Marquee/>
+    <Banner/>
     <div className=" px-6 pt-20">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left: About Us */}

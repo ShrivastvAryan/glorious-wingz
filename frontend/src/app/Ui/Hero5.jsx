@@ -1,7 +1,7 @@
 // components/CallToAction.js
 const Hero5=() =>{
   return (
-    <section className="bg-[#f5e9e0] py-20">
+    <section className="bg-[#f5e9e0] py-20 w-full">
       <div className="max-w-3xl mx-auto px-6 text-center">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug">

@@ -1,32 +1,32 @@
 import React from "react";
-import Marquee from "../Ui/Marquee";
+import Banner from "../Ui/Banner";
 import Hero3 from "../Ui/Hero3";
 import Image from "next/image";
 
 const pastEvents = [
   {
-    title: "Tech Hackathon 2024",
+    title: "Event-1",
     date: "March 15, 2024",
     description:
-      "A 36-hour coding hackathon where students built AI-powered solutions for real-world problems.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure facilis inventore, totam enim hic explicabo deserunt porro esse eos fuga, aliquid quidem, recusandae maxime quod voluptates! Laudantium, eligendi itaque!",
     image:
-      "",
+      "/event.jpg",
   },
   {
-    title: "Sports Analytics Summit",
+    title: "Event-2",
     date: "July 10, 2024",
     description:
-      "Experts and students explored how AI and data analytics are revolutionizing sports.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure facilis inventore, totam enim hic explicabo deserunt porro esse eos fuga, aliquid quidem, recusandae maxime quod voluptates! Laudantium, eligendi itaque!",
     image:
-      "",
+      "/img5.jpg",
   },
   {
-    title: "Community Meetup",
+    title: "Event-3",
     date: "January 28, 2024",
     description:
-      "A networking event to bring together developers, designers, and tech enthusiasts.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure facilis inventore, totam enim hic explicabo deserunt porro esse eos fuga, aliquid quidem, recusandae maxime quod voluptates! Laudantium, eligendi itaque!",
     image:
-      "",
+      "/img6.jpg",
   },
 ];
 
@@ -35,7 +35,7 @@ const Events = () => {
 
     <>
 
-    <Marquee/>
+    <Banner/>
     <Hero3/>
     <div className="py-20 px-6">
 
