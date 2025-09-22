@@ -6,13 +6,13 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Section Title */}
         <p className="text-xs font-semibold text-red-600 tracking-widest uppercase">
-          My Services
+          Our Services
         </p>
         <h2 className="mt-2 text-4xl font-serif font-bold text-gray-900">
-          All you need is on me
+          All you need is us.
         </h2>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-          I will take care of everything for you from event planning and
+          We will take care of everything for you from event planning and
           curation to design and production.
         </p>
 

@@ -28,7 +28,7 @@ const Testimonials = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 xl:grid-cols-2">
           {testimonials.map((t, idx) => (
             <div
               key={idx}

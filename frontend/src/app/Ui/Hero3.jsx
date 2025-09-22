@@ -17,7 +17,7 @@ const services = [
       <Hotel className="w-10 h-10 text-white" />
     ),
     title: "Venues",
-    desc: "A wedding is a cherished, once-in-a-lifetime celebration, and everyone dreams of a magnificent venue for such a special day.",
+    desc: "Every event is a once-in-a-lifetime experience, and the right venue sets the stage for unforgettable memories.",
   },
   {
     icon: <MapPin className="w-10 h-10 text-white" />,

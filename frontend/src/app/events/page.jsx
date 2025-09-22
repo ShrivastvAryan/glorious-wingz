@@ -28,6 +28,14 @@ const pastEvents = [
     image:
       "/img6.jpg",
   },
+  {
+    title: "Event-3",
+    date: "January 28, 2024",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure facilis inventore, totam enim hic explicabo deserunt porro esse eos fuga, aliquid quidem, recusandae maxime quod voluptates! Laudantium, eligendi itaque!",
+    image:
+      "/img6.jpg",
+  },
 ];
 
 const Events = () => {
@@ -37,11 +45,11 @@ const Events = () => {
 
     <Banner/>
     <Hero3/>
-    <div className="py-20 px-6">
+    <div className="pt-5 px-6">
 
       <h1 className="text-3xl font-bold text-center mb-10" > Our Past Events</h1>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 ">
         {pastEvents.map((event, index) => (
           <div
             key={index}

@@ -7,7 +7,7 @@ const Contact= () => {
 
     <>
     <Banner/>
-    <div className=" px-6 pt-20">
+    <div className=" px-6 pt-5 md:pt-10">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left: About Us */}
         <div>

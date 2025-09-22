@@ -3,53 +3,58 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="w-full bg-[#fdf8f5] py-16">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        {/* Left Content */}
-        <div className="text-center md:text-left">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold leading-tight text-gray-900">
-            Hi, <br />
-            This is <br />
-            — Glourious <br />
-            Wingz
+    <section className="w-full bg-[#fdf8f5] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 py-20 md:py-28 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        
+        {/* Left Content: Text & CTA */}
+        <div className="text-center lg:text-left">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-normal leading-tight text-gray-800">
+            We Design, Plan & Create 
+            <span className="block font-bold text-[#4a4a4a] mt-2">Your Perfect Day.</span>
           </h1>
-          <p className="mt-6 text-gray-600 text-base sm:text-lg max-w-md mx-auto md:mx-0">
-            Floral Designer, Wedding Planner, and Event Enthusiast who creates
-            memorable moments for special occasions.
+          <p className="mt-6 text-gray-600 text-lg max-w-lg mx-auto lg:mx-0">
+            From grand and high-profile corporate galas to intimate celebrations and bespoke décor,
+            Glorious Wingz transforms every occasion into an unforgettable experience with seamless planning, flawless execution, and a touch of creative brilliance.
           </p>
-          <button className="mt-8 px-6 py-3 bg-[#962528] text-white rounded-md shadow hover:bg-red-700 transition">
-            Get in touch
+          <button className="mt-10 px-8 py-3 bg-[#a13d3d] text-white font-medium rounded-md shadow-lg hover:bg-[#8e3636] transition-transform transform hover:scale-105">
+            Get In Touch
           </button>
         </div>
 
-        {/* Right Images */}
-        <div className="relative flex justify-center md:justify-end">
-          {/* Main Portrait */}
-          <Image
-            src="/img-2.jpg"
-            alt="Main"
-            width={320}
-            height={420}
-            className="rounded-lg shadow-lg w-[220px] sm:w-[280px] md:w-[320px] h-auto border-4 border-[#962528] object-cover"
-          />
+        {/* Right Content: Image Collage */}
+        <div className="relative h-[450px] sm:h-[550px] w-full max-w-lg mx-auto">
+          {/* Background Image: Top Right */}
+          <div className="absolute top-0 right-0 w-2/3 h-2/3 z-0">
+            <Image
+              src="/img-3.jpg" // **REPLACE THIS IMAGE**
+              alt="Elegant event table setup"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg shadow-md"
+            />
+          </div>
 
-          {/* Small Circle Image */}
-          <Image
-            src="/logo.jpg"
-            alt="Circle"
-            width={144}
-            height={144}
-            className="absolute bottom-[-30px] left-[-30px] sm:bottom-[-40px] sm:left-[-60px] w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 rounded-full object-cover shadow-md"
-          />
+          {/* Main Image: Center */}
+          <div className="absolute top-1/2 left-1/2 w-[65%] h-[80%] -translate-x-1/2 -translate-y-1/2 z-10">
+             <Image
+              src="/img6.jpg" // **REPLACE THIS IMAGE**
+              alt="Beautiful floral arrangement centerpiece"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg shadow-xl"
+            />
+          </div>
 
-          {/* Small Rect Image */}
-          <Image
-            src="/img-3.jpg"
-            alt="Small"
-            width={128}
-            height={160}
-            className="absolute top-8 right-[-30px] sm:right-[-40px] md:right-[-60px] w-24 h-32 sm:w-28 sm:h-36 md:w-32 md:h-40 rounded-lg border-4 border-[#962528] shadow-md object-cover"
-          />
+          {/* Foreground Image: Bottom Left */}
+          <div className="absolute bottom-0 left-0 w-1/2 h-1/2 z-20">
+            <Image
+              src="/logo.jpg" // **REPLACE THIS IMAGE**
+              alt="Detailed shot of wedding decor"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg shadow-lg "
+            />
+          </div>
         </div>
       </div>
     </section>

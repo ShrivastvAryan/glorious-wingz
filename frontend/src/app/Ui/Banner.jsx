@@ -18,9 +18,9 @@ const Banner = () => {
   ]
 
   return (
-    <div className="w-full h-[80vh]">
+    <div className="w-full h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[60vh] xl:h-[70vh] 2xl:h-[80vh] max-h-[90vh]">
       <Swiper
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination]}
         spaceBetween={30}
         slidesPerView={1}
         loop={true}
@@ -34,7 +34,7 @@ const Banner = () => {
       >
         {banners.map((banner, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-[80vh]">
+            <div className="relative w-full h-full">
               <Image
                 src={banner.img}
                 alt={banner.alt}
@@ -51,3 +51,5 @@ const Banner = () => {
 }
 
 export default Banner
+
+
