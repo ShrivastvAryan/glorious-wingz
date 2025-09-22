@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "next/link"
-import { Youtube, Mail, Instagram } from "lucide-react"
+import { Youtube, Mail, Instagram, Facebook } from "lucide-react"
 import Image from "next/image"
 
 const Footer = () => {
@@ -43,9 +43,9 @@ const Footer = () => {
         {/* Contact */}
         <div className="flex flex-col gap-2">
           <div className="text-xl">Contact Us</div>
-          <div className="pt-2">
-            <p>+91 99535XXXX</p>
-            <p>abcd@gmail.com</p>
+          <div className="space-y-2">
+            <p>+91 9871416290</p>
+            <a href="mailto:gloriouswingz@gmail.com">gloriouswingz@gmail.com</a>
           </div>
         </div>
 
@@ -60,14 +60,23 @@ const Footer = () => {
 
       {/* Social Icons */}
       <div className="w-full flex justify-center items-center gap-6 pt-14 text-xl">
+        <Link href='' target="_blank">
         <Youtube className="cursor-pointer hover:text-[#962528]" />
+        </Link>
+       <Link href='https://www.instagram.com/glorious_wingz/' target="_blank">
         <Instagram className="cursor-pointer hover:text-[#962528]" />
+        </Link>
+        <Link href='mailto:gloriouswingz@gmail.com' target="_blank">
         <Mail className="cursor-pointer hover:text-[#962528]" />
+        </Link>
+        <Link href='' target="_blank">
+        <Facebook className="cursor-pointer hover:text-[#962528]" />
+        </Link>
       </div>
 
       {/* Copyright */}
       <p className="text-center py-10 text-sm">
-        © 2025 Gloriouz Events. All rights reserved
+        © 2025 Glorious Wingz. All rights reserved
       </p>
     </div>
   )
